@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Upload, X, Plus, Image as ImageIcon } from 'lucide-react';
+import { Upload, X, Image as ImageIcon } from 'lucide-react';
 
 interface UploadedImage {
   id: string;
@@ -183,7 +183,7 @@ const Collections = () => {
                   />
                   <select
                     value={image.category}
-                    onChange={(e) => updateImage(image.id, { category: e.target.value as any })}
+                    onChange={(e) => updateImage(image.id, { category: e.target.value as UploadedImage['category'] })}
                     className="w-full px-3 py-2 border border-gray-200 focus:ring-1 focus:ring-pastel-blue focus:border-pastel-blue text-sm font-light"
                   >
                     <option value="granite">Granite Sample</option>
