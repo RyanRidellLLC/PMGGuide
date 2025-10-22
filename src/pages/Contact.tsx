@@ -110,7 +110,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
+                className="w-full bg-gray-900 text-white py-3 px-6 hover:bg-gray-800 transition-colors flex items-center justify-center space-x-2"
               >
                 <Send className="h-5 w-5" />
                 <span>Send Message</span>
