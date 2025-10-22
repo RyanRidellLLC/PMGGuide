@@ -144,7 +144,7 @@ const Gallery = () => {
         {/* Lightbox */}
         {selectedImage && (
           <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
-            <div className="relative max-w-4xl max-h-full">
+            <div className="relative w-full h-full flex items-center justify-center">
               <button
                 onClick={closeLightbox}
                 className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
@@ -169,7 +169,7 @@ const Gallery = () => {
               <img
                 src={selectedImage.image}
                 alt={selectedImage.title}
-                className="max-w-full max-h-full object-contain"
+                className="max-w-[calc(100%-8rem)] max-h-[calc(100%-8rem)] object-contain"
               />
             </div>
           </div>
