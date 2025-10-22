@@ -71,7 +71,7 @@ const Gallery = () => {
       image: '/DSC02325.jpg',
       title: 'Finished Stone Project',
       description: 'Completed installation ready for use'
-    }
+    },
     {
       id: 11,
       image: '/DSC02298.jpg',
