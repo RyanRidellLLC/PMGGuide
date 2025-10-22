@@ -49,17 +49,8 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-blue-600" />
                 <div>
                   <h3 className="font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">info@stonecraft.com</p>
+                  <p className="text-gray-600">amybradford748@gmail.com</p>
                 </div>
-              </div>
-            </div>
-
-            <div className="mt-8 p-6 bg-gray-50 rounded-lg">
-              <h3 className="font-semibold text-gray-900 mb-3">Business Hours</h3>
-              <div className="text-gray-600 space-y-1">
-                <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                <p>Saturday: 9:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
               </div>
             </div>
           </div>
