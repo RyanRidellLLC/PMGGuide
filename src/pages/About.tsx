@@ -8,7 +8,7 @@ const About = () => {
         
         <div className="prose prose-lg mx-auto">
           <p className="text-xl text-gray-600 mb-8 text-center">
-            Professional granite and stone services with years of experience.
+            Professional granite and stone services with years of experience
           </p>
           
           <div className="grid md:grid-cols-2 gap-12 mt-12">

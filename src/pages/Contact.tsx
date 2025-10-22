@@ -49,7 +49,7 @@ const Contact = () => {
                 <Mail className="h-6 w-6 text-blue-600" />
                 <div>
                   <h3 className="font-semibold text-gray-900">Email</h3>
-                  <p className="text-gray-600">info@pmgguide.com</p>
+                  <p className="text-gray-600">info@stonecraft.com</p>
                 </div>
               </div>
             </div>
