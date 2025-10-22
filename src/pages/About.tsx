@@ -25,11 +25,13 @@ const About = () => {
             <div>
               <h2 className="text-2xl font-semibold text-gray-900 mb-4">What We Do</h2>
               <ul className="text-gray-600 space-y-2">
-                <li>• Kitchen countertop installation</li>
-                <li>• Bathroom vanity surfaces</li>
-                <li>• Commercial stone work</li>
-                <li>• Custom granite fabrication</li>
-                <li>• Stone repair and maintenance</li>
+                <li>• Outdoor walkways</li>
+                <li>• Patios</li>
+                <li>• Pool copings</li>
+                <li>• Mantel in your house</li>
+                <li>• Countertops</li>
+                <li>• Stone replacement</li>
+                <li>• Tile for bathroom</li>
               </ul>
             </div>
           </div>
