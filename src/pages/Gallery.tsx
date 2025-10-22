@@ -171,11 +171,6 @@ const Gallery = () => {
                 alt={selectedImage.title}
                 className="max-w-full max-h-full object-contain"
               />
-              
-              <div className="absolute bottom-4 left-4 right-4 text-white">
-                <h3 className="text-xl font-semibold mb-2">{selectedImage.title}</h3>
-                <p className="text-gray-300">{selectedImage.description}</p>
-              </div>
             </div>
           </div>
         )}
