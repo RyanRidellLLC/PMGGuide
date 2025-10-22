@@ -17,15 +17,15 @@ const About = () => {
         {/* Services */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold text-gray-900 mb-8 text-center">What We Do</h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-8">
-              <ul className="space-y-3 text-lg text-gray-700">
+          <div className="max-w-3xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-12">
+              <ul className="space-y-3 text-lg text-gray-700 text-center md:text-left">
                 <li>• Outdoor walkways</li>
                 <li>• Patios</li>
                 <li>• Pool copings</li>
                 <li>• Mantel in your house</li>
               </ul>
-              <ul className="space-y-3 text-lg text-gray-700">
+              <ul className="space-y-3 text-lg text-gray-700 text-center md:text-left">
                 <li>• Countertops</li>
                 <li>• Stone replacement</li>
                 <li>• Tile for bathroom</li>
