@@ -169,7 +169,7 @@ const Gallery = () => {
               <img
                 src={selectedImage.image}
                 alt={selectedImage.title}
-                className="max-w-[calc(100%-8rem)] max-h-[calc(100%-8rem)] object-contain"
+                className="max-w-[90vw] max-h-[90vh] object-contain"
               />
             </div>
           </div>
