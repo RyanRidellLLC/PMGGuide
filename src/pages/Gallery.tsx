@@ -1,143 +1,168 @@
 import React, { useState } from 'react';
-import { Upload, X } from 'lucide-react';
+import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 
-interface Photo {
-  id: string;
-  file: File;
-  preview: string;
+interface Project {
+  id: number;
+  image: string;
   title: string;
+  description: string;
 }
 
 const Gallery = () => {
-  const [photos, setPhotos] = useState<Photo[]>([]);
-  const [dragActive, setDragActive] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<Project | null>(null);
 
-  const handleDrag = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    if (e.type === "dragenter" || e.type === "dragover") {
-      setDragActive(true);
-    } else if (e.type === "dragleave") {
-      setDragActive(false);
+  const projects: Project[] = [
+    {
+      id: 1,
+      image: '/DSC02292.jpg',
+      title: 'Kitchen Countertop Installation',
+      description: 'Beautiful granite countertop with custom edge work'
+    },
+    {
+      id: 2,
+      image: '/DSC02293.jpg',
+      title: 'Bathroom Vanity Surface',
+      description: 'Elegant stone surface for luxury bathroom'
+    },
+    {
+      id: 3,
+      image: '/DSC02295.jpg',
+      title: 'Custom Stone Work',
+      description: 'Professional installation with precision cuts'
+    },
+    {
+      id: 4,
+      image: '/DSC02301.jpg',
+      title: 'Granite Kitchen Island',
+      description: 'Large format granite installation'
+    },
+    {
+      id: 5,
+      image: '/DSC02308.jpg',
+      title: 'Stone Surface Detail',
+      description: 'Close-up of quality craftsmanship'
+    },
+    {
+      id: 6,
+      image: '/DSC02311.jpg',
+      title: 'Bathroom Stone Installation',
+      description: 'Premium stone work for residential project'
+    },
+    {
+      id: 7,
+      image: '/DSC02314.jpg',
+      title: 'Kitchen Countertop Edge',
+      description: 'Custom edge profile and finishing'
+    },
+    {
+      id: 8,
+      image: '/DSC02317.jpg',
+      title: 'Stone Surface Application',
+      description: 'Professional installation technique'
+    },
+    {
+      id: 9,
+      image: '/DSC02322.jpg',
+      title: 'Granite Installation Process',
+      description: 'Behind the scenes of quality work'
+    },
+    {
+      id: 10,
+      image: '/DSC02325.jpg',
+      title: 'Finished Stone Project',
+      description: 'Completed installation ready for use'
+    }
+  ];
+
+  const openLightbox = (project: Project) => {
+    setSelectedImage(project);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
+
+  const nextImage = () => {
+    if (selectedImage) {
+      const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
+      const nextIndex = (currentIndex + 1) % projects.length;
+      setSelectedImage(projects[nextIndex]);
     }
   };
 
-  const handleDrop = (e: React.DragEvent) => {
-    e.preventDefault();
-    e.stopPropagation();
-    setDragActive(false);
-    
-    if (e.dataTransfer.files && e.dataTransfer.files[0]) {
-      handleFiles(e.dataTransfer.files);
+  const prevImage = () => {
+    if (selectedImage) {
+      const currentIndex = projects.findIndex(p => p.id === selectedImage.id);
+      const prevIndex = (currentIndex - 1 + projects.length) % projects.length;
+      setSelectedImage(projects[prevIndex]);
     }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    e.preventDefault();
-    if (e.target.files && e.target.files[0]) {
-      handleFiles(e.target.files);
-    }
-  };
-
-  const handleFiles = (files: FileList) => {
-    Array.from(files).forEach(file => {
-      if (file.type.startsWith('image/')) {
-        const reader = new FileReader();
-        reader.onload = (e) => {
-          const newPhoto: Photo = {
-            id: Date.now().toString() + Math.random().toString(36).substr(2, 9),
-            file,
-            preview: e.target?.result as string,
-            title: file.name.replace(/\.[^/.]+$/, "")
-          };
-          setPhotos(prev => [...prev, newPhoto]);
-        };
-        reader.readAsDataURL(file);
-      }
-    });
-  };
-
-  const removePhoto = (id: string) => {
-    setPhotos(prev => prev.filter(photo => photo.id !== id));
-  };
-
-  const updateTitle = (id: string, title: string) => {
-    setPhotos(prev => 
-      prev.map(photo => photo.id === id ? { ...photo, title } : photo)
-    );
   };
 
   return (
     <div className="min-h-screen bg-white py-16">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Project Gallery</h1>
+        <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">Our Work</h1>
         <p className="text-xl text-gray-600 mb-12 text-center">
-          Upload and showcase your granite and stone projects
+          See examples of our professional granite and stone installations
         </p>
 
-        {/* Upload Area */}
-        <div className="mb-12">
-          <div
-            className={`border-2 border-dashed rounded-lg p-12 text-center transition-colors ${
-              dragActive 
-                ? 'border-blue-500 bg-blue-50' 
-                : 'border-gray-300 hover:border-gray-400'
-            }`}
-            onDragEnter={handleDrag}
-            onDragLeave={handleDrag}
-            onDragOver={handleDrag}
-            onDrop={handleDrop}
-          >
-            <input
-              type="file"
-              multiple
-              accept="image/*"
-              onChange={handleChange}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-            />
-            <Upload className="h-12 w-12 text-gray-400 mx-auto mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">
-              Upload Project Photos
-            </h3>
-            <p className="text-gray-600">
-              Drag and drop images here, or click to select files
-            </p>
-          </div>
+        {/* Photo Grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {projects.map(project => (
+            <div 
+              key={project.id} 
+              className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+              onClick={() => openLightbox(project)}
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-900 mb-2">{project.title}</h3>
+                <p className="text-gray-600 text-sm">{project.description}</p>
+              </div>
+            </div>
+          ))}
         </div>
 
-        {/* Photo Grid */}
-        {photos.length > 0 ? (
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {photos.map(photo => (
-              <div key={photo.id} className="bg-white border rounded-lg overflow-hidden shadow-sm">
-                <div className="relative">
-                  <img
-                    src={photo.preview}
-                    alt={photo.title}
-                    className="w-full h-48 object-cover"
-                  />
-                  <button
-                    onClick={() => removePhoto(photo.id)}
-                    className="absolute top-2 right-2 bg-red-500 text-white p-1 rounded-full hover:bg-red-600 transition-colors"
-                  >
-                    <X className="h-4 w-4" />
-                  </button>
-                </div>
-                <div className="p-4">
-                  <input
-                    type="text"
-                    value={photo.title}
-                    onChange={(e) => updateTitle(photo.id, e.target.value)}
-                    className="w-full text-lg font-semibold text-gray-900 border-none outline-none bg-transparent"
-                    placeholder="Project title..."
-                  />
-                </div>
+        {/* Lightbox */}
+        {selectedImage && (
+          <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
+            <div className="relative max-w-4xl max-h-full">
+              <button
+                onClick={closeLightbox}
+                className="absolute top-4 right-4 text-white hover:text-gray-300 z-10"
+              >
+                <X className="h-8 w-8" />
+              </button>
+              
+              <button
+                onClick={prevImage}
+                className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+              >
+                <ChevronLeft className="h-8 w-8" />
+              </button>
+              
+              <button
+                onClick={nextImage}
+                className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
+              >
+                <ChevronRight className="h-8 w-8" />
+              </button>
+
+              <img
+                src={selectedImage.image}
+                alt={selectedImage.title}
+                className="max-w-full max-h-full object-contain"
+              />
+              
+              <div className="absolute bottom-4 left-4 right-4 text-white">
+                <h3 className="text-xl font-semibold mb-2">{selectedImage.title}</h3>
+                <p className="text-gray-300">{selectedImage.description}</p>
               </div>
-            ))}
-          </div>
-        ) : (
-          <div className="text-center py-12">
-            <p className="text-gray-500">No photos uploaded yet. Start by uploading some project images!</p>
+            </div>
           </div>
         )}
       </div>
