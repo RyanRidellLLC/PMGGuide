@@ -13,7 +13,7 @@ const Header = () => {
           <div className="flex items-center space-x-3">
             <Link to="/" className="flex items-center space-x-3">
               <ArchitecturalLogo className="h-12 w-12 text-deep-navy" />
-              <span className="text-2xl font-light text-deep-navy tracking-widest">PMG GUIDE</span>
+              <span className="text-xl font-semibold">StoneCraft</span>
             </Link>
           </div>
           

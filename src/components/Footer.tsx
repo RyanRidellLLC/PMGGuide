@@ -8,10 +8,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-3 mb-4 md:mb-0">
             <Diamond className="h-8 w-8" />
-            <span className="text-xl font-semibold">PMG Guide</span>
+            <span className="text-lg font-semibold">StoneCraft</span>
           </div>
           <p className="text-gray-400 text-sm">
-            © 2024 PMG Guide. All rights reserved.
+            © 2024 StoneCraft. All rights reserved.
           </p>
         </div>
       </div>
