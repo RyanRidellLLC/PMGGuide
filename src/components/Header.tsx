@@ -18,11 +18,10 @@ const Header = () => {
           </div>
           
           <nav className="hidden md:flex space-x-12">
-            <a href="#home" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Atelier</a>
-            <Link to="/collections" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Collections</Link>
-            <a href="#gallery" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Portfolio</a>
-            <a href="#quote" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Consultation</a>
-            <a href="#contact" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Atelier Direct</a>
+            <Link to="/" className="text-deep-navy hover:text-gray-600 transition-colors">Home</Link>
+            <Link to="/about" className="text-deep-navy hover:text-gray-600 transition-colors">About</Link>
+            <Link to="/gallery" className="text-deep-navy hover:text-gray-600 transition-colors">Gallery</Link>
+            <Link to="/contact" className="text-deep-navy hover:text-gray-600 transition-colors">Contact</Link>
           </nav>
 
           <button
@@ -36,11 +35,10 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-6">
             <nav className="flex flex-col space-y-4">
-              <a href="#home" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Atelier</a>
-              <Link to="/collections" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Collections</Link>
-              <a href="#gallery" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Portfolio</a>
-              <a href="#quote" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Consultation</a>
-              <a href="#contact" className="text-deep-navy hover:text-pastel-blue transition-colors text-sm font-light tracking-wide uppercase">Atelier Direct</a>
+              <Link to="/" className="text-deep-navy hover:text-gray-600 transition-colors">Home</Link>
+              <Link to="/about" className="text-deep-navy hover:text-gray-600 transition-colors">About</Link>
+              <Link to="/gallery" className="text-deep-navy hover:text-gray-600 transition-colors">Gallery</Link>
+              <Link to="/contact" className="text-deep-navy hover:text-gray-600 transition-colors">Contact</Link>
             </nav>
           </div>
         )}
