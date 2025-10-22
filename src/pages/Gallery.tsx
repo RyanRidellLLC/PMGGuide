@@ -129,7 +129,7 @@ const Gallery = () => {
           {projects.map(project => (
             <div 
               key={project.id} 
-              className="bg-white border rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
+              className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => openLightbox(project)}
             >
               <img
@@ -137,10 +137,6 @@ const Gallery = () => {
                 alt={project.title}
                 className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
               />
-              <div className="p-4">
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{project.title}</h3>
-                <p className="text-gray-600 text-sm">{project.description}</p>
-              </div>
             </div>
           ))}
         </div>
