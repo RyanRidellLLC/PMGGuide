@@ -14,81 +14,105 @@ const Gallery = () => {
   const projects: Project[] = [
     {
       id: 1,
-      image: '/DSC02298.jpg',
-      title: 'Image 1',
-      description: 'StoneCraft project'
+      image: '/DSC02292.jpg',
+      title: 'Project 1',
+      description: 'StoneCraft installation'
     },
     {
       id: 2,
-      image: '/DSC02299.jpg',
-      title: 'Image 2',
-      description: 'StoneCraft project'
+      image: '/DSC02293.jpg',
+      title: 'Project 2',
+      description: 'StoneCraft installation'
     },
     {
       id: 3,
-      image: '/DSC02304.jpg',
-      title: 'Image 3',
-      description: 'StoneCraft project'
+      image: '/DSC02293 copy.jpg',
+      title: 'Project 3',
+      description: 'StoneCraft installation'
     },
     {
       id: 4,
-      image: '/DSC02298.jpg',
-      title: 'Image 4',
-      description: 'StoneCraft project'
+      image: '/DSC02295.jpg',
+      title: 'Project 4',
+      description: 'StoneCraft installation'
     },
     {
       id: 5,
-      image: '/DSC02299.jpg',
-      title: 'Image 5',
-      description: 'StoneCraft project'
+      image: '/DSC02295 copy.jpg',
+      title: 'Project 5',
+      description: 'StoneCraft installation'
     },
     {
       id: 6,
-      image: '/DSC02304.jpg',
-      title: 'Image 6',
-      description: 'StoneCraft project'
+      image: '/DSC02295 copy copy.jpg',
+      title: 'Project 6',
+      description: 'StoneCraft installation'
     },
     {
       id: 7,
       image: '/DSC02298.jpg',
-      title: 'Image 7',
-      description: 'StoneCraft project'
+      title: 'Project 7',
+      description: 'StoneCraft installation'
     },
     {
       id: 8,
-      image: '/DSC02299.jpg',
-      title: 'Image 8',
-      description: 'StoneCraft project'
+      image: '/DSC02304.jpg',
+      title: 'Project 8',
+      description: 'StoneCraft installation'
     },
     {
       id: 9,
-      image: '/DSC02304.jpg',
-      title: 'Image 9',
-      description: 'StoneCraft project'
+      image: '/DSC02304 copy.jpg',
+      title: 'Project 9',
+      description: 'StoneCraft installation'
     },
     {
       id: 10,
-      image: '/DSC02298.jpg',
-      title: 'Image 10',
-      description: 'StoneCraft project'
+      image: '/DSC02308.jpg',
+      title: 'Project 10',
+      description: 'StoneCraft installation'
     },
     {
       id: 11,
-      image: '/DSC02299.jpg',
-      title: 'Image 11',
-      description: 'StoneCraft project'
+      image: '/DSC02314.jpg',
+      title: 'Project 11',
+      description: 'StoneCraft installation'
     },
     {
       id: 12,
-      image: '/DSC02304.jpg',
-      title: 'Image 12',
-      description: 'StoneCraft project'
+      image: '/DSC02314 copy.jpg',
+      title: 'Project 12',
+      description: 'StoneCraft installation'
     },
     {
       id: 13,
-      image: '/DSC02298.jpg',
-      title: 'Image 13',
-      description: 'StoneCraft project'
+      image: '/DSC02314 copy copy.jpg',
+      title: 'Project 13',
+      description: 'StoneCraft installation'
+    },
+    {
+      id: 14,
+      image: '/DSC02317.jpg',
+      title: 'Project 14',
+      description: 'StoneCraft installation'
+    },
+    {
+      id: 15,
+      image: '/DSC02317 copy.jpg',
+      title: 'Project 15',
+      description: 'StoneCraft installation'
+    },
+    {
+      id: 16,
+      image: '/DSC02322.jpg',
+      title: 'Project 16',
+      description: 'StoneCraft installation'
+    },
+    {
+      id: 17,
+      image: '/DSC02322 copy.jpg',
+      title: 'Project 17',
+      description: 'StoneCraft installation'
     }
   ];
 
@@ -124,11 +148,10 @@ const Gallery = () => {
           See examples of our professional granite and stone installations
         </p>
 
-        {/* Photo Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projects.map(project => (
-            <div 
-              key={project.id} 
+            <div
+              key={project.id}
               className="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow cursor-pointer"
               onClick={() => openLightbox(project)}
             >
@@ -141,7 +164,6 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Lightbox */}
         {selectedImage && (
           <div className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4">
             <div className="relative w-full h-full flex items-center justify-center">
@@ -151,14 +173,14 @@ const Gallery = () => {
               >
                 <X className="h-8 w-8" />
               </button>
-              
+
               <button
                 onClick={prevImage}
                 className="absolute left-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
               >
                 <ChevronLeft className="h-8 w-8" />
               </button>
-              
+
               <button
                 onClick={nextImage}
                 className="absolute right-4 top-1/2 transform -translate-y-1/2 text-white hover:text-gray-300 z-10"
