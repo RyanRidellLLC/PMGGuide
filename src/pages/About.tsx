@@ -32,7 +32,7 @@ const About = () => {
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What We Do</h2>
           <div className="flex justify-center">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-x-16 gap-y-5">
               {services.map((service, index) => (
                 <div key={index} className="flex items-center space-x-4">
                   <CheckCircle className="h-7 w-7 text-gray-900 flex-shrink-0" />
