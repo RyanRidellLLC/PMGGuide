@@ -14,81 +14,81 @@ const Gallery = () => {
   const projects: Project[] = [
     {
       id: 1,
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/DSC02298.jpg',
       title: 'Image 1',
-      description: 'Professional granite installation'
+      description: 'StoneCraft project'
     },
     {
       id: 2,
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/DSC02299.jpg',
       title: 'Image 2',
-      description: 'Quality stone work'
+      description: 'StoneCraft project'
     },
     {
       id: 3,
-      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/DSC02304.jpg',
       title: 'Image 3',
-      description: 'Custom granite surfaces'
+      description: 'StoneCraft project'
     },
     {
       id: 4,
-      image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/DSC02298.jpg',
       title: 'Image 4',
-      description: 'Kitchen countertop work'
+      description: 'StoneCraft project'
     },
     {
       id: 5,
-      image: 'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/DSC02299.jpg',
       title: 'Image 5',
-      description: 'Bathroom stone installation'
+      description: 'StoneCraft project'
     },
     {
       id: 6,
-      image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: '/DSC02304.jpg',
       title: 'Image 6',
-      description: 'Professional craftsmanship'
+      description: 'StoneCraft project'
     },
     {
       id: 7,
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: '/DSC02298.jpg',
       title: 'Image 7',
-      description: 'Stone surface detail'
+      description: 'StoneCraft project'
     },
     {
       id: 8,
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: '/DSC02299.jpg',
       title: 'Image 8',
-      description: 'Quality installation'
+      description: 'StoneCraft project'
     },
     {
       id: 9,
-      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: '/DSC02304.jpg',
       title: 'Image 9',
-      description: 'Custom stone work'
+      description: 'StoneCraft project'
     },
     {
       id: 10,
-      image: 'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600',
+      image: '/DSC02298.jpg',
       title: 'Image 10',
-      description: 'Finished project'
+      description: 'StoneCraft project'
     },
     {
       id: 11,
-      image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: '/DSC02299.jpg',
       title: 'Image 11',
-      description: 'Granite installation'
+      description: 'StoneCraft project'
     },
     {
       id: 12,
-      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: '/DSC02304.jpg',
       title: 'Image 12',
-      description: 'Stone craftsmanship'
+      description: 'StoneCraft project'
     },
     {
       id: 13,
-      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=500',
+      image: '/DSC02298.jpg',
       title: 'Image 13',
-      description: 'Professional work'
+      description: 'StoneCraft project'
     }
   ];
 

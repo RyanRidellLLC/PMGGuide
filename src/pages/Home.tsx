@@ -40,19 +40,19 @@ const Home = () => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2">
               <img
-                src="https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/DSC02298.jpg"
                 alt="Professional granite installation"
                 className="w-full h-80 object-cover shadow-lg"
               />
             </div>
             <div className="space-y-6">
               <img
-                src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=400"
+                src="/DSC02299.jpg"
                 alt="Kitchen countertop detail"
                 className="w-full h-36 object-cover shadow-lg"
               />
               <img
-                src="https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=400"
+                src="/DSC02304.jpg"
                 alt="Stone surface craftsmanship"
                 className="w-full h-36 object-cover shadow-lg"
               />
