@@ -14,81 +14,81 @@ const Gallery = () => {
   const projects: Project[] = [
     {
       id: 1,
-      image: '/DSC02292.jpg',
-      title: 'Kitchen Countertop Installation',
-      description: 'Beautiful granite countertop with custom edge work'
+      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Image 1',
+      description: 'Professional granite installation'
     },
     {
       id: 2,
-      image: '/DSC02293.jpg',
-      title: 'Bathroom Vanity Surface',
-      description: 'Elegant stone surface for luxury bathroom'
+      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Image 2',
+      description: 'Quality stone work'
     },
     {
       id: 3,
-      image: '/DSC02295.jpg',
-      title: 'Custom Stone Work',
-      description: 'Professional installation with precision cuts'
+      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Image 3',
+      description: 'Custom granite surfaces'
     },
     {
       id: 4,
-      image: '/DSC02301.jpg',
-      title: 'Granite Kitchen Island',
-      description: 'Large format granite installation'
+      image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Image 4',
+      description: 'Kitchen countertop work'
     },
     {
       id: 5,
-      image: '/DSC02308.jpg',
-      title: 'Stone Surface Detail',
-      description: 'Close-up of quality craftsmanship'
+      image: 'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=800',
+      title: 'Image 5',
+      description: 'Bathroom stone installation'
     },
     {
       id: 6,
-      image: '/DSC02311.jpg',
-      title: 'Bathroom Stone Installation',
-      description: 'Premium stone work for residential project'
+      image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Image 6',
+      description: 'Professional craftsmanship'
     },
     {
       id: 7,
-      image: '/DSC02314.jpg',
-      title: 'Kitchen Countertop Edge',
-      description: 'Custom edge profile and finishing'
+      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Image 7',
+      description: 'Stone surface detail'
     },
     {
       id: 8,
-      image: '/DSC02317.jpg',
-      title: 'Stone Surface Application',
-      description: 'Professional installation technique'
+      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Image 8',
+      description: 'Quality installation'
     },
     {
       id: 9,
-      image: '/DSC02322.jpg',
-      title: 'Granite Installation Process',
-      description: 'Behind the scenes of quality work'
+      image: 'https://images.pexels.com/photos/1571453/pexels-photo-1571453.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Image 9',
+      description: 'Custom stone work'
     },
     {
       id: 10,
-      image: '/DSC02325.jpg',
-      title: 'Finished Stone Project',
-      description: 'Completed installation ready for use'
+      image: 'https://images.pexels.com/photos/2724749/pexels-photo-2724749.jpeg?auto=compress&cs=tinysrgb&w=600',
+      title: 'Image 10',
+      description: 'Finished project'
     },
     {
       id: 11,
-      image: '/DSC02298.jpg',
-      title: 'Stone Surface Detail Work',
-      description: 'Precision cutting and fitting techniques'
+      image: 'https://images.pexels.com/photos/1080696/pexels-photo-1080696.jpeg?auto=compress&cs=tinysrgb&w=500',
+      title: 'Image 11',
+      description: 'Granite installation'
     },
     {
       id: 12,
-      image: '/DSC02299.jpg',
-      title: 'Custom Stone Installation',
-      description: 'Professional granite countertop project'
+      image: 'https://images.pexels.com/photos/1080721/pexels-photo-1080721.jpeg?auto=compress&cs=tinysrgb&w=500',
+      title: 'Image 12',
+      description: 'Stone craftsmanship'
     },
     {
       id: 13,
-      image: '/DSC02304.jpg',
-      title: 'Quality Stone Craftsmanship',
-      description: 'Expert installation and finishing work'
+      image: 'https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&cs=tinysrgb&w=500',
+      title: 'Image 13',
+      description: 'Professional work'
     }
   ];
 
