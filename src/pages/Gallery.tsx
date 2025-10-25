@@ -26,92 +26,38 @@ const Gallery = () => {
     },
     {
       id: 3,
-      image: '/DSC02293 copy.jpg',
+      image: '/DSC02295.jpg',
       title: 'Project 3',
       description: 'StoneCraft installation'
     },
     {
       id: 4,
-      image: '/DSC02295.jpg',
+      image: '/DSC02298.jpg',
       title: 'Project 4',
       description: 'StoneCraft installation'
     },
     {
       id: 5,
-      image: '/DSC02295 copy.jpg',
+      image: '/DSC02304.jpg',
       title: 'Project 5',
       description: 'StoneCraft installation'
     },
     {
       id: 6,
-      image: '/DSC02295 copy copy.jpg',
+      image: '/DSC02308.jpg',
       title: 'Project 6',
       description: 'StoneCraft installation'
     },
     {
       id: 7,
-      image: '/DSC02298.jpg',
+      image: '/DSC02314.jpg',
       title: 'Project 7',
       description: 'StoneCraft installation'
     },
     {
       id: 8,
-      image: '/DSC02304.jpg',
-      title: 'Project 8',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 9,
-      image: '/DSC02304 copy.jpg',
-      title: 'Project 9',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 10,
-      image: '/DSC02308.jpg',
-      title: 'Project 10',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 11,
-      image: '/DSC02314.jpg',
-      title: 'Project 11',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 12,
-      image: '/DSC02314 copy.jpg',
-      title: 'Project 12',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 13,
-      image: '/DSC02314 copy copy.jpg',
-      title: 'Project 13',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 14,
-      image: '/DSC02317.jpg',
-      title: 'Project 14',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 15,
-      image: '/DSC02317 copy.jpg',
-      title: 'Project 15',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 16,
       image: '/DSC02322.jpg',
-      title: 'Project 16',
-      description: 'StoneCraft installation'
-    },
-    {
-      id: 17,
-      image: '/DSC02322 copy.jpg',
-      title: 'Project 17',
+      title: 'Project 8',
       description: 'StoneCraft installation'
     }
   ];
