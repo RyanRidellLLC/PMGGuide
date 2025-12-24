@@ -1,4 +1,5 @@
 import React from 'react';
+imort homeContent from '../content/home.json';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone, Award, Users, Clock } from 'lucide-react';
 
@@ -9,10 +10,10 @@ const Home = () => {
       <section className="py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
-            StoneCraft
+            {homeContent.heroTitle}
           </h1>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Professional granite and stone services for your home and business. 
+           {homeContent.heroSubtitle} {homeContent.heroSubtitle} granite and stone services for your home and business. 
             Quality craftsmanship and reliable service throughout Utah County.
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -20,7 +21,7 @@ const Home = () => {
               to="/gallery" 
               className="bg-gray-900 text-white px-8 py-3 hover:bg-gray-800 transition-colors inline-flex items-center justify-center"
             >
-              View Our Work
+              {homeContent.primaryCtaText} Our Work
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>
             <Link 
