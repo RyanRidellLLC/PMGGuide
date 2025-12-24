@@ -1,5 +1,5 @@
 import React from 'react';
-imort homeContent from '../content/home.json';
+import homeContent from '../content/home.json';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Phone, Award, Users, Clock } from 'lucide-react';
 
@@ -13,19 +13,20 @@ const Home = () => {
             {homeContent.heroTitle}
           </h1>
           <p className="text-xl text-gray-600 mb-12 max-w-3xl mx-auto leading-relaxed">
-           {homeContent.heroSubtitle} {homeContent.heroSubtitle} granite and stone services for your home and business. 
-            Quality craftsmanship and reliable service throughout Utah County.
+            {homeContent.heroSubtitle}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Link 
-              to="/gallery" 
-              className="bg-gray-900 text-white px-8 py-3 hover:bg-gray-800 transition-colors inline-flex items-center justify-center"
-            >
-              {homeContent.primaryCtaText} Our Work
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            <Link 
-              to="/contact" 
+            {homeContent.primaryCtaText && homeContent.primaryCtaHref && (
+              <Link
+                to={homeContent.primaryCtaHref}
+                className="bg-gray-900 text-white px-8 py-3 hover:bg-gray-800 transition-colors inline-flex items-center justify-center"
+              >
+                {homeContent.primaryCtaText}
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            )}
+            <Link
+              to="/contact"
               className="border-2 border-gray-900 text-gray-900 px-8 py-3 hover:bg-gray-50 transition-colors inline-flex items-center justify-center"
             >
               <Phone className="mr-2 h-5 w-5" />
