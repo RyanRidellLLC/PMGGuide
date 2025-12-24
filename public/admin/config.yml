@@ -3,13 +3,11 @@ backend:
   repo: RyanRidellLLC/PMGGuide
   branch: main
 
-# If you want draft/publish flow:
 publish_mode: editorial_workflow
 
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-# Optional but helpful for GitHub Pages
 site_url: "https://ryanridellllc.github.io/PMGGuide"
 display_url: "https://ryanridellllc.github.io/PMGGuide"
 
@@ -24,8 +22,8 @@ collections:
         fields:
           - { label: "Hero Title", name: "heroTitle", widget: "string" }
           - { label: "Hero Subtitle", name: "heroSubtitle", widget: "text" }
-          - { label: "Primary Button Text", name: "primaryCtaText", widget: "string", required: false }
-          - { label: "Primary Button URL", name: "primaryCtaHref", widget: "string", required: false }
+          - { label: "Primary CTA Text", name: "primaryCtaText", widget: "string", required: false }
+          - { label: "Primary CTA Href", name: "primaryCtaHref", widget: "string", required: false }
 
       - name: "about"
         label: "About"
@@ -33,4 +31,8 @@ collections:
         format: "json"
         fields:
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Mission", name: "mission", widget: "text" }
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            field: { label: "Service", name: "service", widget: "string" }
