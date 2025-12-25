@@ -7,8 +7,8 @@ publish_mode: editorial_workflow
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
-site_url: "https://ryanridellllc.github.io/PMGGuide"
-display_url: "https://ryanridellllc.github.io/PMGGuide"
+site_url: "https://stonecraft.studio"
+display_url: "https://stonecraft.studio"
 
 collections:
   - name: "pages"
